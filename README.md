@@ -58,3 +58,20 @@ The effectiveness of domain-specific models like SciBERT for scientific NLP
 The benefits of using parameter-efficient fine-tuning (LoRA) to reduce computational cost while maintaining high accuracy
 
 A clean and reproducible workflow for multi-class text classification with Hugging Face Transformers and Datasets
+
+📈 Results
+The table below shows the training and validation performance per epoch for one of the fine-tuned models (likely roberta-base). 
+![Training performance for Roberta](arXiv-Scientific-Paper-Classification/after_training.png)
+
+Full results (including training/validation losses) are logged in the notebook.
+
+🏁 Final model performance on validation set (Epoch 9):
+Accuracy: 86.68%
+
+F1 Score: 86.64%
+
+Precision: 86.75%
+
+Recall: 86.68%
+
+These metrics demonstrate stable convergence and high performance on arXiv abstract classification, confirming that the model generalizes well to unseen data within the same distribution.
