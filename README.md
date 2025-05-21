@@ -60,18 +60,19 @@ The benefits of using parameter-efficient fine-tuning (LoRA) to reduce computati
 A clean and reproducible workflow for multi-class text classification with Hugging Face Transformers and Datasets
 
 📈 Results
+
 The table below shows the training and validation performance per epoch for one of the fine-tuned models (likely roberta-base). 
-![Training performance for Roberta](arXiv-Scientific-Paper-Classification/after_training.png)
 
-Full results (including training/validation losses) are logged in the notebook.
+![Training performance for Roberta](https://github.com/yuliadziuba/arXiv-Scientific-Paper-Classification/blob/main/after_training.png)
 
-🏁 Final model performance on validation set (Epoch 9):
-Accuracy: 86.68%
+Final model performance on validation set (Epoch 9):
 
-F1 Score: 86.64%
+![Performance on valid set for Roberta](https://github.com/yuliadziuba/arXiv-Scientific-Paper-Classification/blob/main/for_valid_metr.png)
 
-Precision: 86.75%
+![Confusion Matrix](https://github.com/yuliadziuba/arXiv-Scientific-Paper-Classification/blob/main/for_valid.png)
 
-Recall: 86.68%
+Final model performance on test set (Epoch 9):
+
+![Performance on test set for Roberta](https://github.com/yuliadziuba/arXiv-Scientific-Paper-Classification/blob/main/for_test_metr.png)
 
 These metrics demonstrate stable convergence and high performance on arXiv abstract classification, confirming that the model generalizes well to unseen data within the same distribution.
